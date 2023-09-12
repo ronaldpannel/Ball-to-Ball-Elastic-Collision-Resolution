@@ -125,6 +125,7 @@ function animate() {
 animate();
 
 canvas.addEventListener("pointermove", (e) => {
+  e.preventDefault();
   pointer.x = e.clientX;
   pointer.y = e.clientY;
 });
